@@ -10,8 +10,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.android14.R
+import com.example.android14.databinding.ActivityFirstBinding
 
 class FirstActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityFirstBinding
 
     private val register = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){ result ->
         if (result.resultCode == RESULT_OK){
@@ -29,16 +32,23 @@ class FirstActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_first)
+
+        binding = ActivityFirstBinding.inflate(layoutInflater)
+
+        setContentView(binding.root)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        val btnOpen = findViewById<Button>(R.id.btnOpen)
+        supportActionBar?.setDisplayHomeAsUpEnabled(false)
+        supportActionBar?.title = "Primer Activity"
 
-        btnOpen.setOnClickListener {
+        //Recuperar informacion
+        //binding.tvttiile.text = getString(R.string.appname)
+
+        binding.btnOpen.setOnClickListener {
 
             val extraBundle = Bundle().apply {
                 putBoolean("EXTRA_IS_MARRIED_KEY", false)

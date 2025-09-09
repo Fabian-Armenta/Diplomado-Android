@@ -1,9 +1,15 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Android14" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.Android14" parent="Theme.Material3.DayNight">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
     <style name="Theme.Android14" parent="Base.Theme.Android14" />
+
+    <style name="GreenTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/green</item>
+        <item name="fontFamily">@font/bernier_shade_regular</item>
+        <item name="android:textSize">20sp</item>
+    </style>
 </resources>
