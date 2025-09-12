@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Android Español 14</string>
+    <string name="app_name">HomeFitPoints</string>
     <string name="title_label">Titulo de primer View</string>
     <string name="label_subtitle">Descripcion del segundo TextView</string>
+    <string name="hello_blank_fragment">Hello</string>
+
+    <string name="login_title">¡Bienvenido!</string>
+    <string name="name_hint">Escribe tu nombre</string>
+    <string name="email_hint">Escribe tu email</string>
+    <string name="confirm_email_hint">Confirma tu email</string>
+    <string name="error_emails_do_not_match">Los emails no coinciden</string>
+    <string name="error_field_required">Este campo es obligatorio</string>
+    <string name="login_button">Entrar</string>
+    <string name="welcome_message">¡Bienvenido, %1$s!</string>
+    <string name="your_email_is">Tu correo es: %1$s</string>
+    <string name="default_guest_name">Invitado</string>
+    <string name="default_no_email">No proporcionado</string>
+    <string name="back_button">Regresar</string>
 
 </resources>

@@ -5,4 +5,9 @@
     <color name="green">#4EE026</color>
     <color name="blue">#272EF5</color>
 
+    <color name="orange_app">#FF5733</color>
+    <color name="gray_app">#F77F00</color>
+
+
+
 </resources>
